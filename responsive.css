@@ -1,0 +1,40 @@
+/* Small devices (mobile phones) */
+@media only screen and (max-width: 767px) {
+    .row {
+      flex-direction: column;
+      margin: 0;
+    }
+  
+    .box {
+      margin: 20px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .row {
+      margin: 0 -20px;
+    }
+  
+    .box {
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .row {
+      margin: 0 -30px;
+    }
+  
+    .box {
+      margin: 30px;
+      padding: 30px;
+      border-radius: 20px;
+    }
+  }
+  

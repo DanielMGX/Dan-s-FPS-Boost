@@ -1,0 +1,127 @@
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+  }
+  
+  .box {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .box:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #e67e22;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box a {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .box a:before {
+    content: '\2193';
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 5px;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .box:hover a:before {
+    transform: rotate(0);
+    margin-right: 10px;
+  }
+  
+  .box:nth-child(1) {
+    background-color: #ff0000; 
+  }
+  
+  .box:nth-child(1):before {
+    background-color: #b30000; 
+  }
+  
+  .box:nth-child(2) {
+    background-color: #261ec0;
+  }
+  
+  .box:nth-child(2):before {
+    background-color: #178bd9;
+  }
+  
+  .box:nth-child(3) {
+    background-color: #6cdf0e;
+  }
+  
+  .box:nth-child(3):before {
+    background-color: #c2e654;
+  }
+  
+  .box:nth-child(4) {
+    background-color: #11e64a;
+  }
+  
+  .box:nth-child(4):before {
+    background-color: #26d6d9;
+  }
+  
+  .box:nth-child(5) {
+    background-color: #6d16de;
+  }
+  
+  .box:nth-child(5):before {
+    background-color: #1b5dce;
+  }
+
+/* Body styles */
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .footer {
+    text-align: center;
+  }
+  
+  
+  
+  
